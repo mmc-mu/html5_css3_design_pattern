@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *.border{
+            border: 1px solid red;
+        }
+        p{
+            width: 200px;
+            height: 40px;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+<script>
+    /**
+     * 浏览器会将多个空白字符合并为一个
+     * 浏览器只支持一下空白字符：空格(&#x0020;) 、制表符(&#x0009;) 、换行符(&#x000A;) 、回车符(&#X000D;)
+     *
+     * 浏览器会使用一组连续空白只读的第一个字符的样式渲染合并后的空格。因此，HTML文档中空格的位置决定了它的宽度和高度。
+     *
+     * 空白字符的位置决定了是在元素的内部 还是 外部 合并空格。
+     * 空格是向左合并，因此在元素之前添加空格，就可以合并元素之前的空白字符。
+     *      如果要合并元素内部的空白字符，需要删除元素之前的所有空白字符，并且元素内部至少要添加一个空格。
+     *      如果希望空格位于元素之内，并且在元素内容之后，那么只需要在元素之后添加空白字符
+     *      如果想要元素的结束标签之后添加空白字符，那么需要删除元素内容之后的所有空白字符，并在元素之后插入空白字符
+     *
+     * 在元素的开始和结束标签中添加空白字符，不影响内容的显示。
+     *
+     * HTML提供5种具有不同宽度的间隔实体。但它们不是空白字符。
+     *      不间断空白字符 &nbsp  具有标准间隔宽度,适用于所有主流浏览器
+     *      其他间隔的宽度(&zwnj; &thinsp; &ensp; &emsp; )在不同浏览器中有所差异
+     *
+     *
+    */
+</script>
+<p>start<span class="border"> 第一   </span>   嘻嘻</p>
+<p>start  <span class="border">第二    </span>嘻嘻</p>
+<p>start  <span class="border">第三</span> 嘻嘻</p>
+<p >start  <span class="border">第四</span             > 嘻嘻</p>
+
+
+</body>
+</html>
