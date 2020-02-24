@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/03.css" media="all" type="text/css">
+</head>
+<body>
+<h1>标题呀</h1>
+<p>一段话一段话<code>title</code> attributes.</p>
+<p title="Second"><code>p[title]</code>咩咩咩</p>
+<p title="Third paragraph"><code>p[title~="paragraph"]</code>selects all paragraphs..<code>段落</code>.</p>
+<p title="#4 paragraph"><code>p[title="#4 paragraph"]</code>又是一大段啊，英文真烦人<code>#4 paragraph </code>咩咩咩
+</p>
+<a href="http://www.baidu/com" target="_blank" hreflang="en-GB">哈哈哈</a>
+<script>
+    /**
+     * 问题：元素是否包含指定属性，属性值内是否包含指定单词，元素指定属性是否设置了特定值
+     * 解决：
+     *      属性存在性选择器----->选择包含指定属性的元素  p[title] 可以选择所有包含title属性的p元素。属性值可以任意设置。有些浏览器无法识别空属性值 <p title="">
+     *
+     *      属性单词选择器-----> 选择在指定属性中包含指定单词的元素。如 p[title~="paragraph"] 能够选择title属性值包含单词paragraph的所有段落 【区分大小写】
+     *
+     *      属性值选择器----> 选择在指定属性中包含指定值的元素。如 p[title="# 4 paragraph"]能够选择title属性值正好是#4 paragraph的所有段落。【区分大小写和空格】
+     *
+     *   这些属性选择器可以附加在任意的选择器后。
+     *
+     * 属性选择器可以使用任意的子字符串匹配方式，如
+     *      [attr^=val]   属性值以 val开头
+     *      [attr$=val]   属性值以val结束
+     *      [attr*=val]   属性值包含val
+     *
+     *  多个属性选择器可以串联使用。a[href="xxx"][target="_blank"]
+     *
+    */
+</script>
+</body>
+</html>

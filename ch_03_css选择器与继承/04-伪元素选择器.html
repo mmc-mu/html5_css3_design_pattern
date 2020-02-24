@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/04.css" media="all" type="text/css">
+</head>
+<body>
+<h1>标题</h1>
+<p>段落前缴费孵化和覅合法话<br/>费卡覅偶阿帆<code>中间位置</code>后位置</p>
+<div><span>span位置</span></div>
+<dl><dt>dt这个位置</dt></dl>
+<script>
+    /**
+     * 问题： 如何选择一个元素的首字母或者首行内容
+     * 解决： html不需要标记代码，在css中使用first-letter(首字母)和first-line(首行)伪元素选择器
+     *
+     * 模式： ele:first-letter{}
+     *        *.cls:first-letter{}
+     *        #id:first-letter{}
+     *        ele:first-line{}
+     *        *.cls:first-line{}
+     *        #id:first-line{}
+     *
+     *   first-letter与first-line只适合终止块元素，不适用行内元素或结构块元素
+     *
+     *   因为他们只选择元素的一部分内容，而不是元素的所有内容，换言之，他们创建了一个 伪元素
+     *
+     *   局限性：first-letter只适用于字体和文字属性。没有position,left ,right,bottom,top。
+     *           浏览器异常情况，有时无法选择首字母，或者或选择句首多个字母。如文字之前是图片或对象。
+     *
+     *           IE6 选择器分组后，无法识别选择器分组中的伪元素选择器
+    */
+</script>
+</body>
+</html>

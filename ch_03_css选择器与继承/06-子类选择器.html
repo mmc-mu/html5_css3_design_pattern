@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/06.css" media="all" type="text/css">
+</head>
+<body>
+<div>
+    <p class="button square">方形</p>
+    <p class="button rounded">椭圆形</p>
+    <p class="button go">GO</p>
+    <p class="button">嘻嘻</p>
+</div>
+<script>
+    /**
+     * 问题：如何给一类元素设置一组通用规则，如何将这些元素划分为子类，为之设置一些可能覆盖基础规则的特殊规则
+     * 解决： html中，在元素中设置cls, 多个用空格分开，最好先写基类 再写子类
+     *        css中，
+     *
+     *  模板：   .cls{}   .cls.subcls.etc{}
+     *          <p cls="cls subcls etc">
+     *
+     *  适用于所有元素
+     *
+     *  优点：可以创建一种由 类与子类 构成的层次规则，子类元素会"继承 基类和子类的规则。css层叠顺序保证子类的规则能覆盖基类规则
+    */
+</script>
+</body>
+</html>

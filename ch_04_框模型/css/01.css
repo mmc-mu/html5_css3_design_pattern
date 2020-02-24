@@ -1,0 +1,24 @@
+p,ol,li,table{
+    display: inline;/*行内元素*/
+}
+strong{
+    display: inline-block; /*把行内元素渲染成 嵌套在行内元素之中的块级元素*/
+    width: 250px;
+}
+em{
+    display: block;/*块级元素*/
+}
+dfn{
+    display: list-item;/*列表元素*/
+    list-style-type: square;
+}
+img{
+    display: none;/*隐藏*/
+}
+.ul{
+    padding-left: 15px;
+}
+div{
+    border: 2px solid red;
+    padding: 10px;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/03.css" media="all" type="text/css">
+</head>
+<body>
+<div class="container">
+    <span class="default">BEFORE</span>
+    <span class="box">嘻嘻嘻嘻嘻嘻</span>
+    <span class="default">AFTER</span>
+</div>
+<script>
+    /**
+     * 问题：如何设置行内元素的框样式
+     * 解决：行内框在行内流flow中渲染。它们在横向由左往右排列，当超出最近终止块祖先元素宽度时，换行。这个终止块就是行内格式化 上下文
+     *
+     *      width height  overflow 对行内元素不起作用，因为它们总是收缩以适应内容的宽高
+     *      margin 左右外边距可以改变行内元素在流中的位置。
+     *      margin-top与margin-bottom 无效-----> 可以使用line-height 设置行高
+     *
+     *  使用范围： 只适用于行内元素或任意转换为行内框的元素
+    */
+</script>
+</body>
+</html>

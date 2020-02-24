@@ -1,0 +1,25 @@
+body{
+    font-family: verdana,arial,sans-serif;
+    font-size: 18px;
+    color: blue;
+    background-color: pink;
+}
+
+div{
+    line-height: 2em;
+}
+p{
+    letter-spacing: 0.8px;
+    background-color: darkgrey;
+}
+
+em{
+    font-style: italic;
+}
+
+span{
+    font-style: normal;
+}
+body *{
+    border: 1px solid red;
+}

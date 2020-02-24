@@ -1,0 +1,41 @@
+/*选择器分组*/
+p,ol,li{
+    border: solid 1px yellow;
+    padding-left: 10px;
+    font-family: monospace;
+    margin: 10px;
+    margin-left: 10px;
+}
+
+ol{
+    margin-left: 0;
+    padding-left: 40px;
+    margin-top: 20px;
+}
+
+/*位置选择器*/
+div *.my-class{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#my-id p{
+    background-color: gray;
+}
+#my-id >*{
+    border: 3px solid green;
+}
+
+:root{background: pink}/*跟选择器*/
+li:nth-child(2n+1)/*n级子元素选择器*/
+li:nth-last-child(-n+2)/*倒数第n级子元素选择器*/
+li:nth-of-type(2n+1){float: right}/*第n级类型选择器*/
+
+li:nth-last-of-type(2n+1){float: right} /*倒数第N级选择器  奇数在右边*/
+li:first-child{font-weight: bold;color:paleturquoise}/*第一个子元素 第一个加粗*/
+li:last-child{font-weight: bold;color:orangered}/*最后一个子元素 最后一个加粗*/
+ul li:first-of-type{color: orange} /*第一个特定类型 */
+
+li:only-child
+div:only-of-type
+p:empty{display:none}
+li+li{font-style: italic ;color: blue}

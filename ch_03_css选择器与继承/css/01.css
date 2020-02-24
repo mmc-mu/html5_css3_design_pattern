@@ -1,0 +1,23 @@
+
+@namespace foo url(http://www.example.com); /*声明一个命名空间*/
+
+foo|h1{color:blue}/*匹配命名空间的H1*/
+foo|*{colot:green}/*匹配命名空间下的所有元素*/
+|h1{color:red}/*匹配所有h1,无命名空间*/
+*|h1{color:yellow} /*匹配所有h1元素，可以有或者没有命名空间*/
+h1{color:gray} /*同行*/
+
+p{
+  border: 2px solid yellowgreen;
+}
+
+*.my-class1{
+    padding: 10px;
+}
+*.my-chass2{
+    letter-spacing: 0.11em;
+}
+#my-id{
+    background-color: red;
+}
+

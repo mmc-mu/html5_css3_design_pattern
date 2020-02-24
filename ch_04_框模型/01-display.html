@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/01.css" media="all" type="text/css">
+</head>
+<body>
+<code>display:inline</code>
+<p>p</p> <p>p</p> <p>p</p>
+<ol><li>li</li><li>li</li><li>li</li></ol>
+<table><tr><td>td</td><td>td</td></tr><tr><td>td</td><td>td</td></tr></table>
+<strong>strong <br/><code>display:inline-block</code></strong><br/><br/>
+<em>em<code>display:block</code></em><em>em</em><br/>
+
+<div class="ul"><dfn>dfn<code>disply:list-item</code></dfn><dfn>dfn</dfn></div>
+<br/><img src="../images/star.gif" alt="star"><code>display:none</code>
+<script>
+    /**
+     *  运行和书上效果不符，没有边框！！！？
+     *
+     *  问题：如何将一个块元素 渲染为行内元素，列表项目或表格
+     *  解决：display属性可以改变元素的渲染方式。
+     *        display:none  隐藏
+     *        display:inline  将元素渲染为行内元素
+     *        display:block 或display：list-item 行内元素渲染为块级元素 或 列表项目
+     *        display:inline-block  行内元素渲染为嵌套在行内元素之中的块级元素
+     *
+     *  注意： 如果将一个元素渲染为列表元素，那它父元素必须渲染为块级元素，且要设置左内边距或 左外边距
+     *         这是因为列表由2块组成：外部块，如<ol><ul><dl> 内部块：<li><dd><dt>
+     *         使用list-style-type可以指定项目符合
+     *
+     *         浏览器会将list-item渲染为带行内项目符合的块级元素。
+     *
+     *
+    */
+</script>
+</body>
+</html>

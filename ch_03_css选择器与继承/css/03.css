@@ -1,0 +1,31 @@
+code {
+    white-space: pre;
+}
+p[title]{
+    padding: 5px 10px;
+    border: 1px solid gray;
+}
+p[title~="paragraph"]{
+    background-color: orange;
+}
+p[title="#  test paragraph"]{
+    font-weight: bold;
+}
+a[href="http://www.baidu/com"][target="_blank"]{
+    font-weight: bold;
+    color: orangered;
+}
+p[type^="#4"]{
+    font-size: 40px;
+}
+a[href$=".com"]{
+    font-weight: bold;
+    color: pink;
+}
+p[title*="test"]{
+    font-weight: bold;
+    color: yellowgreen;
+}
+p[title="#4 paragraph"]{
+    color: yellow;
+}

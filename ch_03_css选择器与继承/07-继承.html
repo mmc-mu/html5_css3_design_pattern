@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/07.css" media="all" type="text/css">
+</head>
+<body>
+<div>
+    <p>
+        <em>
+            <span>
+                -这是一段话<code>&lt;body&gt;</code>.<br/>
+                -这是一段话<code>&lt;div&gt;</code>.<br/>
+                -这是一段话<code>&lt;p&gt;</code>.<br/>
+                -这是一段话<code>&lt;em&gt;</code>,
+                嘻嘻嘻嘻<code>font-style:norma</code>,咩咩咩
+            </span>
+        </em>
+    </p>
+</div>
+<script>
+    /**
+     *  问题：设置一个样式后，如何让后代元素具有相同样式
+     *  解决：大多数行内属性默认都是继承得来的。
+     *
+     *       继承是css内置的选择器，可直接使用。当浏览器遇到继承属性时，会自动选择后代的行内元素，
+     *       为他们应用继承属性的规则，如果直接设置一个元素的属性，那么他会覆盖所有继承的值
+     *
+     *       所有元素默认继承的属性： visibility 和 cursor
+     *
+     *       行内元素都会继承的属性：letter-spacing,word-spacing,white-space,line-height,color,font,font-family,
+     *       font-size,font-style,font-variant,font-weight,text-decoration,text-transform ,direction
+     *
+     *       终止块元素会继承的属性：text-indent ,text-align
+     *
+     *       列表元素会继承的属性：list-style,list-style-type ,list-style-position,list-style-image
+     *
+     *       表哥元素会继承的属性：border-collapse
+     *
+     *  不能继承的属性----------
+     *        display,magin，border,padding,background,height,min-height,max-height,width
+     *        min-width,max-width,overflow,position,left,right,top,bottom,z-index,float,clear,
+     *        table-layout,vertical-align,page-break-after,page-break-before unicode-bidi
+     *
+     *   局限性-------css提供一个inherited的常量值，可以赋值给任意属性。如果一个属性设置为inherited,那么这属性会继承父元素的值。 IE7之前不支持
+     *
+     *   模拟实现继承-----html *{border:1px solid red} 这就为<html>的所有后代元素添加了边框
+     *
+     *
+     *
+    */
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+p:first-line{/*p第一行*/
+    font-weight: bold;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    color: pink;
+}
+p:first-letter{/*p首字母*/
+    font-size: 48px;
+}
+span:first-line{
+    font-weight: bold;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    color: yellowgreen;
+}
+span:first-letter{
+    font-size: 48px;
+}
+
+dl:first-line{
+    font-weight: bold;
+    word-spacing: 2px;
+     letter-spacing: 1px;
+}
+dl:first-letter{
+    font-size: 48px;
+    color: yellow;
+}

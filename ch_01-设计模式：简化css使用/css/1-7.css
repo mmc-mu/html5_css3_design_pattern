@@ -1,0 +1,27 @@
+html,body{
+    border-style: none!important;
+}
+*{
+    border: 0px solid black;/*通配选择器*/
+}
+div{
+    border: 2px solid black;/*元素选择器*/
+}
+*.c10{
+    border: 4px solid black;/*二级选这起 类，属性，伪选择器*/
+}
+#i100{
+    border: 6px solid yellow;/*ID选择器*/
+}
+{
+    border:8px solid pink!important;
+;}
+div{
+    border: 10px solid gray!important;
+}
+*.c10{
+    border: 12px solid yellowgreen!important;
+}
+#i100{
+    border: 14px solid yellowgreen!important;
+}

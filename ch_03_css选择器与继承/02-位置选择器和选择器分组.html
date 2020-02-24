@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/02.css" media="all" type="text/css">
+</head>
+<body>
+<h1>我是H1</h1>
+<div id="my-id">
+    <ol>
+        <li>div 1 ol li</li>
+        <li>div 2 ol li</li>
+        <li><p class="my-class">div 3 ol li p.my-class</li>
+    </ol>
+</div>
+<script>
+    /**
+     * 1.要给不同的选择器应用同一组规则，可以使用逗号将多个选择器串联一起，
+     *      selector,selector,etc{}-------p,ol,li {}  这几个元素都运用同一个样式
+     *
+     * 2.要选择后代元素，可以使用空格将多个选择器连到一起，空格是后代元素选择器
+     *      selelctor selector etc{}------div *.cls{} 选择一个div下，所有类设置为cls的元素
+     *      #id p{} -------能够选择<div id='id'>下的所有p元素
+     *
+     * 3.要选择子元素，使用大于号，将多个选择器连在一起
+     *      selector > selector > etc {}
+     *      #id>p{}  选择id为id的元素下的所有子元素
+     *
+     * 4.要选择第一个子元素，可以在任意选择器之后，添加：first-child。  类似的规则还有：nth-child   nth-last-child，可以指定元素的具体位置
+     *      selector:first-child{}
+     *
+     * 5.要选择相邻兄弟元素，可以用 加号  将多个选择器连在一起。
+     *      li+li   所有术语列表项目相邻兄弟元素的列表项目,可以选择除第一个列表项目之外的所有元素
+    */
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.box{
+    display: block;
+    overflow: auto;
+    visibility: visible;
+    width: 220px;
+    height: 100px;
+    margin: 10px auto;
+    padding-top: 200px;
+    background-color: yellow;
+    border: 100px solid gray;
+}

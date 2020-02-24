@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/05.css" media="all" type="text/css">
+</head>
+<body>
+<p>
+    <a href="http://www.baidu.com">a:link----unviisited link</a>
+    <a href="http://www.baidu.com">a:visited----viisited link</a>
+    <a href="http://www.baidu.com">a:hover----mouse hoverinf</a>
+    <a href="http://www.baidu.com">a:active----visiting a link</a>
+    <p>我是一段</p>
+</p>
+<script>
+    /**
+     * 问题：如何设置超链接未访问，已访问，鼠标悬停或正在访问的样式
+     * 解决：
+     *        a:link  未访问
+     *        a:visited  已访问
+     *        a:hover  鼠标悬停
+     *        a:focus 非IE浏览器正在聚焦
+     *        a:active IE中正在聚焦
+     *
+     * 伪类选择器 仅适用于 超链接----p也可以呀 （仅悬停）
+     * IE6只支持超链接的Hover伪类选择器。IE7和其他主流浏览器支持所有元素的  悬停状态
+     *
+     * css2.1 定义另外两个伪类选择器： first-child 和 lang()
+     *
+     *        first-child: 属于某个元素的第一个孩子元素
+     *        lang() : 选择设置了特定人类语言的元素
+     *
+     *        IE6都不支持，IE7只支持first-child
+     *
+     *  伪类选择器应该采用这个顺序  link  visited hover  active和focus
+     *
+    */
+</script>
+</body>
+</html>

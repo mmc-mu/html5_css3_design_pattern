@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/04.css" media="all" type="text/css">
+</head>
+<body>
+<h1>Inline-block Box</h1>
+<div class="container">
+
+    <div class="container" >
+        <span class="default">BEFORE</span>
+        <img  class="replaced-box" src="../images/star.gif" alt="star" />
+        <span class="default">AFTER</span>
+
+        <span class="default">BEFORE</span>
+        <span class="inline-box">Inline element displayed as an inline block.</span>
+        <span class="default">AFTER</span>
+    </div>
+</div>
+<script>
+    /**
+     *  问题：如何设置行内块级元素的框样式。
+     *        行内块级元素包括 可替换元素  和显示为 行内块的行内元素
+     *        如 img是可替换元素，浏览器会将该元素替换为图片
+     *           display:inline-block 可以在行内上下文中 将任意行内元素显示为 块级元素
+     *
+     *  解决：行内块级框 在行内流中与行内框相似，但具有与块级框相似的  外边框，边框，内边距，宽度，高度。
+     *        行内块级框不能换行
+     *        行内块级框 会增加行高，以适应其高度，内边距，边框和外边距
+     *        行内块级框 可以收缩适应，设定大小或拉伸适应。
+     *
+     *        width:auto 和height:auto  可以将可替换元素设置为原始大小
+     *
+     *        width：100%可以拉伸行内块元素
+     *
+     *
+     *
+     *
+     *
+    */
+</script>
+</body>
+</html>
